@@ -42,7 +42,7 @@ export const ACCESSIBLE=()=>{
   )
 }
 
-export default {
+const component = {
   Bolt,
   FREENOW,
   SEDAN,
@@ -51,3 +51,4 @@ export default {
   ECO,
   ACCESSIBLE
 }
+export default component;

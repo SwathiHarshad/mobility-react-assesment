@@ -1,18 +1,30 @@
+@import './theme.scss';
+
 .card--block{
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  box-shadow: $card-boxShadow;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: $card-background;
   .card--supplier{
     svg{
       height: 100px;
-      width: 100px;
+      width: 60px;
     }
-    
+    font-size: 26px;
+    font-weight: 600;
+    color: $heading--color;
+    margin: auto;
   }
   .card--VehicleType{
     svg{
       height: 50px;
       width: 50px;
+    }
+    span{
+      margin-left: 10px;
     }
   }
 }

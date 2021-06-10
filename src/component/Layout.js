@@ -3,7 +3,6 @@ import {Helmet} from 'react-helmet';
 
 export default function Layout(props){
   let OGImage= "/src/asset/icon-cropped.jpg"
-  console.log(props)
   return(
     <div>
       <Helmet>

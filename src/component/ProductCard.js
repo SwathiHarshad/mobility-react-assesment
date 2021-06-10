@@ -9,12 +9,14 @@ export default function ProductCard(props){
     <div className="card--block">
       <div className="card--supplier"><Supplier/></div>
       <div>
+        <div className="card--supplier" >{data.supplier.supplierName}</div>
         <div className="card--VehicleType">
           <VehicleType/>
           {data.category.vehicleType}
+          <span>{data.product.maxSeats} Seats</span>
         </div>
-        <div>{data.eta}</div>
-        <div>{data.price.amount} {data.price.currency}</div>
+        <div>Estimated pickup time <b>{data.eta} min</b></div>
+        <div>Estimated price <b>{data.price.amount} {data.price.currency}</b></div>
       </div>
       
     </div>
