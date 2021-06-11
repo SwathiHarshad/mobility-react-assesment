@@ -1,0 +1,51 @@
+{
+  "name": "Mobility React Assesment",
+  "short_name": "mobility",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#FFFFFF",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/src/asset/icon/icon-65x65.png",
+      "type": "image/png",
+      "size": "65x65"
+    },
+    {
+      "src": "/src/asset/icon/icon-88x88.png",
+      "type": "image/png",
+      "size": "88x88"
+    },
+    {
+      "src": "/src/asset/icon/icon-118x118.png",
+      "type": "image/png",
+      "size": "118x118"
+    },
+    {
+      "src": "/src/asset/icon/icon-133x133.png",
+      "type": "image/png",
+      "size": "133x133"
+    },
+    {
+      "src": "/src/asset/icon/icon-140x140.png",
+      "type": "image/png",
+      "size": "140x140"
+    },
+    {
+      "src": "/src/asset/icon/icon-177x177.png",
+      "type": "image/png",
+      "size": "177x177"
+    },
+    {
+      "src": "/src/asset/icon/icon-353x353.png",
+      "type": "image/png",
+      "size": "353x353"
+    },
+    {
+      "src": "/src/asset/icon/icon-471x471.png",
+      "type": "image/png",
+      "size": "471x471"
+    }
+  ]
+}

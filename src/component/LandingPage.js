@@ -1,14 +1,12 @@
 import data from './asset/availability.json'
 import React, {useState, useEffect} from 'react'
 import './Styles/App.scss';
-import { withFirebase } from './firebase/withFirebase'
 
 import Layout from './component/Layout'
 import ProductCard from './component/ProductCard'
 import ProductDetails from './component/ProductDetails'
 
-export default function App(props) {
-  console.log(props)
+export default function App() {
   let sorted = data.sort((a, b) => (a.eta > b.eta) ? 1 : -1);
   const [sortedData, setsortedData] = useState(sorted) // Data variable
   const [sortKey, setsortKey] = useState("eta") // According to the key the data will be sorted.
@@ -120,4 +118,3 @@ export default function App(props) {
     </div>
   );
 }
-
