@@ -9,9 +9,9 @@ This App utilizes:
 
 ## Demo
 
-![Laptop screenshot](src/asset/laptopScreen.png?raw=true)
+![Laptop screenshot](src/asset/laptopScreen.PNG?raw=true)
 
-![Overlay screenshot](src/asset/Overlay.png?raw=true)
+![Overlay screenshot](src/asset/Overlay.PNG?raw=true)
 
 ## Run In Development Mode
 
