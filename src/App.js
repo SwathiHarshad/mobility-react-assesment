@@ -13,9 +13,10 @@ export default function App() {
   const [sortValue, setsortValue] = useState("Estimated Time") // The value will be display in the UI for sort option
   const [dropdownHeight, setdropdownHeight] = useState("0px") // To oprn and close the dropdown
   const [overlay, setoverlay] = useState("none") // To open and close the details page.
-  const [productDetails, setproductDetails] = useState(null)
+  const [productDetails, setproductDetails] = useState(null) // Overlay data.
 
-  useEffect(() => {
+  // Outside click event handler.
+  useEffect(() => { 
     document.addEventListener('click', handleClickOutside, true);
     return () => {
       document.removeEventListener('click', handleClickOutside, true);
@@ -23,7 +24,6 @@ export default function App() {
   }, [])
 
   function handleClickOutside(e){
-    console.log(e.target.parentElement.classList )
     if(e.target.parentElement.classList !== null && !e.target.parentElement.classList.contains("sort--options")){
       setdropdownHeight("0px")
     }
@@ -65,7 +65,6 @@ export default function App() {
         })
         break;
       default:
-        console.log("Default")
         sorting = data.sort((a, b) => (a.eta > b.eta) ? 1 : -1);
         setsortValue("Estimated Time")
     }
@@ -88,7 +87,7 @@ export default function App() {
         </div>
         
         <div className="sort--options cursor-pointer" style={{height: dropdownHeight}}>
-          <div className={(sortKey === "FREENOW")? 'active': ''} onClick={()=>setsortKey("FREENOW")}>FREENOW</div>
+          <div className={(sortKey === "FREENOW")?'active': ''} onClick={()=>setsortKey("FREENOW")}> FREENOW</div>
           <div className={(sortKey === "Bolt")? 'active': ''} onClick={()=>setsortKey("Bolt")}>Bolt</div>
           <div className={(sortKey === "MOST_POPULAR")? 'active': ''} onClick={()=>setsortKey("MOST_POPULAR")}>Most Popular</div>
           <div className={(sortKey === "HIGHLY_RECOMMENDED")? 'active': ''} onClick={()=>setsortKey("HIGHLY_RECOMMENDED")}>Highly Recommended</div>

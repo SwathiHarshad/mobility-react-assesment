@@ -2,7 +2,7 @@ import React from 'react';
 import {Helmet} from 'react-helmet';
 
 export default function Layout(props){
-  let OGImage= "/src/asset/icon-cropped.jpg"
+  let OGImage= "/src/asset/icon-.jpg"
   return(
     <div>
       <Helmet>
